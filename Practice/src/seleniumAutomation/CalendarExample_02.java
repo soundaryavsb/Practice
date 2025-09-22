@@ -18,8 +18,10 @@ public class CalendarExample_02 {
 		//Way 2:
 		WebElement datebox=driver.findElement(By.id("datepicker"));
 		datebox.click();
+		//click next
 		WebElement NextButon=driver.findElement(By.xpath("//a[@title='Next']"));
 		NextButon.click();
+		//click date
 		WebElement DataAs15=driver.findElement(By.xpath("//a[contains(text(),'15')]"));
 		DataAs15.click();
 		
