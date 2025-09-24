@@ -28,7 +28,7 @@ public class FileDownloadAndVerify {
 		for (File fileName : AllFiles) {
 			if(fileName.getName().equals("TestLeaf Logo.png"))
 			{
-				System.out.println("Yes the file is downloaded");
+				System.out.println("Yes, the file is downloaded");
 				count++;
 				break;
 			}
@@ -38,7 +38,7 @@ public class FileDownloadAndVerify {
 			System.out.println("File is not downloaded");
 		}
 		
-		System.out.println("FIle Size: "+AllFiles.length);
+		System.out.println("File Size: "+AllFiles.length);
 		
 		driver.quit();
 	}

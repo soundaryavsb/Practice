@@ -18,9 +18,6 @@ public class IframeHandlingExample {
 		TryitButton.click();
 		
 		driver.switchTo().alert().sendKeys("Soundarya");
-		driver.switchTo().alert().accept();
-		
-
+		driver.switchTo().alert().accept();	
 	}
-
 }

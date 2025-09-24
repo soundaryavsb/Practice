@@ -19,8 +19,10 @@ public class DragAndDrop_02 {
 		WebElement To=driver.findElement(By.id("droppable"));
 		
 		Actions actions=new Actions(driver);
-		actions.dragAndDrop(Source, To).perform();
-
+		//Way 1:
+//		actions.dragAndDrop(Source, To).perform();
+		
+		//Way 2: 
+		actions.clickAndHold(Source).moveToElement(To).release(To).perform();
 	}
-
 }

@@ -22,7 +22,7 @@ public class AutoCompleteExample {
 		List<WebElement> CourseList=driver.findElements(By.xpath("//*[@id='j_idt87:auto-complete_panel']/ul/li"));
 		System.out.println(CourseList.size());
 		for (WebElement list : CourseList) {
-			if(list.getText().contains("Selenium"))
+			if(list.getText().contains("Se"))
 			{
 				System.out.println("if condition: "+list.getText());
 				list.click();
