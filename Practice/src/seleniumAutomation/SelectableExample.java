@@ -22,7 +22,9 @@ public class SelectableExample {
 		System.out.println(Iteams.size());
 		
 		Actions actions=new Actions(driver);
+		//Way 1:
 //		actions.keyDown(Keys.CONTROL).click(Iteams.get(0)).click(Iteams.get(1)).click(Iteams.get(2)).perform();
+		//Way 2:
 		actions.clickAndHold(Iteams.get(0)).clickAndHold(Iteams.get(1)).clickAndHold(Iteams.get(2)).perform();
 	}
 
