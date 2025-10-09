@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class IframeHandlingExample2 {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", "C:\\WebDriver\\chrome Driver\\chromedriver-win32\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://letcode.in/frame");
@@ -20,6 +20,7 @@ public class IframeHandlingExample2 {
 		FirstName.sendKeys("Sona");
 		LastName.sendKeys("Rana");
 		
+	
 		driver.switchTo().frame(0);
 		WebElement Email=driver.findElement(By.name("email"));
 		Email.sendKeys("SonaRana@gmail.com");
