@@ -13,7 +13,7 @@ public class Alert_01 {
 		driver.get("https://leafground.com/alert.xhtml");
 		driver.manage().window().maximize();
 
-		//Simple Alert
+		//Simple Alert 
 		WebElement Simple=driver.findElement(By.id("j_idt88:j_idt91"));
 		Simple.click();
 		Thread.sleep(1000);
